@@ -1,7 +1,9 @@
-nav {
+#sidebar {
+  box-sizing: border-box;
   height: 100vh;
   width: 160px;
-  position: fixed;
+  position: sticky;
+  align-self: start;
   z-index: 1;
   top: 0;
   left: 0;
@@ -11,7 +13,7 @@ nav {
   border-right: 1px solid #e3e3e3;
 }
 
-nav a {
+#sidebar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 18px;
@@ -20,12 +22,12 @@ nav a {
   transition: 0.25s ease;
 }
 
-nav a:hover {
+#sidebar a:hover {
   color: #000000;
   font-size: 22px;
 }
 
-nav img {
+#sidebar img {
   width: 100%;
 }
 

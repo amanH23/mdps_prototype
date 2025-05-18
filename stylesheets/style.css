@@ -12,17 +12,19 @@ html {
 }
 
 body {
- min-height: 100vh;
- min-height: 100dvh;
- display: grid;
- grid-template-columns: auto 1fr;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 main {
-  margin-left: 160px;
-  text-align: center;
-  position: relative;
-  background-color: white;
+  padding: min(30px 7%);
+}
+
+main p {
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .container {
@@ -31,7 +33,8 @@ main {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),url(images/homepage/main-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url(images/homepage/main-background.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,11 +81,13 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-decoration: none;
+  transition: 0.25s;
 }
 
 .hero-text a:hover {
   background-color: white !important;
   color: black !important;
+  font-size: 18px;
 }
 
 .row {
