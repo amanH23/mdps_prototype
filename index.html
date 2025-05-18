@@ -4,21 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/sidebar_style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=MuseoModerno"
+      rel="stylesheet"
+    />
     <script src="script.js"></script>
     <title>Midlands Decor Planners</title>
   </head>
   <body>
-    <div class="main-container">
-      <div class="sidenav">
-        <img src="images/mdps_logo.png" alt="Logo image" />
-        <a href="#section-home">Home</a>
-        <a href="#section-gallery">Gallery</a>
-        <a href="#section-testimonial">Tetsimonials</a>
-        <a href="#section-about">About MDPS</a>
-        <a href="#section-contact">Contact us</a>
-      </div>
-      <div class="main">
+    <div class="container">
+      <nav>
+        <img src="images/sidebar/mdps_logo.jpg" alt="Logo image" />
+
+        <div class="collapsed_logo_container">
+          <div class="collapsed_logo">
+            <p>mdps</p>
+          </div>
+          <div class="overlay">
+            <button class="openbtn" onclick="openNav()">>></button>
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            <a href="#section-home"><span>Home</span></a>
+          </li>
+          <li>
+            <a href="#section-gallery"> <span>Gallery</span></a>
+          </li>
+          <li>
+            <a href="#section-testimonial"><span>Tetsimonials</span></a>
+          </li>
+          <li>
+            <a href="#section-about"><span>About MDPS</span></a>
+          </li>
+          <li>
+            <a href="#section-contact"><span>Contact us</span></a>
+          </li>
+        </ul>
+      </nav>
+      <main>
         <div class="hero-image" id="section-home">
           <div class="hero-text">
             <h1>Midlands Decor Planners</h1>
@@ -31,31 +58,60 @@
         </div>
         <div class="row" id="section-gallery">
           <div class="column">
-            <img src="images/homepage/off-angle.jpg" alt="pic 1" class="gallery-image" />
-            <img src="images/homepage/zoom-out.jpg" alt="pic 5" class="gallery-image" />
+            <img
+              src="images/homepage/off-angle.jpg"
+              alt="pic 1"
+              class="gallery-image"
+            />
+            <img
+              src="images/homepage/zoom-out.jpg"
+              alt="pic 5"
+              class="gallery-image"
+            />
           </div>
           <div class="column">
-            <img src="images/homepage/portrait.jpg" alt="pic 3" class="gallery-image" />
-            <img src="images/homepage/one-flower.jpg" alt="pic 2" class="gallery-image" />
+            <img
+              src="images/homepage/portrait.jpg"
+              alt="pic 3"
+              class="gallery-image"
+            />
+            <img
+              src="images/homepage/one-flower.jpg"
+              alt="pic 2"
+              class="gallery-image"
+            />
           </div>
           <div class="column">
-            <img src="images/homepage/two-flowers.jpg" alt="pic 4" class="gallery-image" />
+            <img
+              src="images/homepage/two-flowers.jpg"
+              alt="pic 4"
+              class="gallery-image"
+            />
           </div>
         </div>
         <div class="slideshow-container" id="section-testimonial">
           <h2>Testimonials</h2>
           <div class="mySlides">
-            <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+            <q
+              >I love you the more in that I believe you had liked me for my own
+              sake and for nothing else</q
+            >
             <p class="author">- John Keats</p>
           </div>
-        
+
           <div class="mySlides">
-            <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+            <q
+              >But man is not made for defeat. A man can be destroyed but not
+              defeated.</q
+            >
             <p class="author">- Ernest Hemingway</p>
           </div>
-        
+
           <div class="mySlides">
-            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <q
+              >I have not failed. I've just found 10,000 ways that won't
+              work.</q
+            >
             <p class="author">- Thomas A. Edison</p>
           </div>
           <!-- Next/prev buttons -->
@@ -72,13 +128,21 @@
         <div class="main-section" id="section-about">
           <h2>About MDPS</h2>
           <h3>Small text one sentence brief</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
         </div>
         <div class="main-section" id="section-contact">
           <h2>Contact Us</h2>
           <h3>FORM GOES HERE</h3>
         </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>

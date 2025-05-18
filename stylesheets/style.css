@@ -1,61 +1,37 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
-  height: 100vh;
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 body {
+ min-height: 100vh;
+ min-height: 100dvh;
+ display: grid;
+ grid-template-columns: auto 1fr;
 }
 
-.main-container{
-    display: flex;
-    height: 100vh;
+main {
+  margin-left: 160px;
+  text-align: center;
+  position: relative;
+  background-color: white;
 }
 
-.sidenav {
-    height: 100vh;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-    background-color: white;
-    border-right: 1px solid #e3e3e3;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  color: #818181;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #000000;
-}
-
-.sidenav img{
-    width: 100%;
-}
-
-.main {
-    margin-left: 160px;
-    text-align: center;
-    position: relative;
-    background-color: white;
+.container {
+  display: flex;
+  height: 100vh;
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),url(images/Homepage/main-background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),url(images/homepage/main-background.jpg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,7 +116,8 @@ body {
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -168,8 +145,9 @@ body {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
 
@@ -193,12 +171,17 @@ body {
 }
 
 /* Add a background color to the active dot/circle */
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
 /* Add an italic font style to all quotes */
-q {font-style: italic;}
+q {
+  font-style: italic;
+}
 
 /* Add a blue color to the author */
-.author {color: cornflowerblue;}
+.author {
+  color: cornflowerblue;
+}

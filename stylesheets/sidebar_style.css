@@ -1,0 +1,77 @@
+nav {
+  height: 100vh;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background-color: white;
+  border-right: 1px solid #e3e3e3;
+}
+
+nav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.25s ease;
+}
+
+nav a:hover {
+  color: #000000;
+  font-size: 22px;
+}
+
+nav img {
+  width: 100%;
+}
+
+.collapsed_logo_container {
+  position: relative;
+  width: 100%;
+}
+
+.collapsed_logo {
+  font-family: "MuseoModerno";
+  font-size: 20px;
+  text-align: center;
+  background-color: blue;
+}
+
+.collapsed_logo_container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: white;
+}
+
+.openbtn {
+  font-family: "MuseoModerno";
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  background-color: red;
+  color: black;
+  border: none;
+  width: 100%;
+}
